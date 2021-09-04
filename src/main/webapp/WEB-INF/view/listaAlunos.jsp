@@ -1,9 +1,9 @@
 <%@page import="java.util.List"%>
-<%@page import="br.com.curso.java.web.Aluno"%>
+<%@page import="br.com.curso.java.web.model.Aluno"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<c:url value="/removeAluno" var="linkServletRemoveAluno"/>
-<c:url value="/mostraAlunoParaEditar" var="linkServletMostraAlunoParaEditar"/>
+<c:url value="/RemoveAluno" var="linkServletRemoveAluno"/>
+<c:url value="/MostraAlunoParaEditar" var="linkServletMostraAlunoParaEditar"/>
 <!DOCTYPE html>
 <html>
 <head>

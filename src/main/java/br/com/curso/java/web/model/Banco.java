@@ -1,4 +1,4 @@
-package br.com.curso.java.web;
+package br.com.curso.java.web.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class Banco {
 	private static Integer id = 1;
 	
 	public void adiciona(Aluno novoAluno) {
-		alunoList.add(novoAluno);
+		alunoList.add(novoAluno.getId(),novoAluno);
 	}
 	
 	public List<Aluno> getAlunos() {
@@ -37,7 +37,8 @@ public class Banco {
 	}
 	
 	public void edita(Aluno aluno) {
-		this.alunoList.add(aluno.getId(), aluno);
+		remove(aluno.getId());
+		alunoList.add(aluno.getId(), aluno);
 	}
 	
 	

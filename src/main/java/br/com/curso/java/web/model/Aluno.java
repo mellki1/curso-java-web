@@ -1,4 +1,4 @@
-package br.com.curso.java.web;
+package br.com.curso.java.web.model;
 
 import java.util.Date;
 

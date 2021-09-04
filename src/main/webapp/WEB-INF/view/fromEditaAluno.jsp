@@ -2,12 +2,12 @@
     pageEncoding="UTF-8"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<c:url value="/editaAluno" var="linkServletEditaAluno"/>
+<c:url value="/EditaAluno" var="linkServletEditaAluno"/>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Editando Aluno</title>
+<title>Criando Aluno</title>
 </head>
 <body>
 <form action=${linkServletEditaAluno}?id=${aluno.id} method="post">
